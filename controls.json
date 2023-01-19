@@ -1,0 +1,61 @@
+{
+    "metadata": {
+        "control-definition-name": "tra",
+        "control-definition-summary": "Technical Risk Assements are created in order to provide guidance to assess risk in technical systems. It is compliant with SOC.",
+        "control-definition-owner": "Risk and Compliance Department",
+        "control-definition-author": "sajith@newtonrussell.com",
+        "control-definition-version": "1.0.0",
+        "control-definition-organisation-id": "newtonrussell"
+    },
+    "obligations": [
+        {
+            "obligation-id": "tra-obl-001",
+            "obligation-summary": "All business units should have a plan to manage incidents",
+            "obligation-details": "Details description of the obligation",
+            "obligation-requirements": [
+                {
+                    "obligation-scenario-id": "tra-obl-001-sc-001",
+                    "obligation-scenario-summary" : "Tracebility",
+                    "obligation-scenario-description": "Should be able to track"
+                },
+                {
+                    "obligation-scenario-id": "tra-obl-001-sc-002",
+                    "obligation-scenario-summary" : "Reporting",
+                    "obligation-scenario-description": "Should be able to report"
+                },
+                {
+                    "obligation-scenario-id": "tra-obl-001-sc-003",
+                    "obligation-scenario-summary" : "Manage",
+                    "obligation-scenario-description": "Should be able to manage"
+                },
+                {
+                    "obligation-scenario-id": "tra-obl-001-sc-003",
+                    "obligation-scenario-summary" : "Impact",
+                    "obligation-scenario-description": "Should be able to identify the impact"
+                }
+            ]
+        }
+    ],
+    "controls": [
+        {
+            "control-id": "TRA-001",
+            "control-category": "Data Management Controls",
+            "control-summary": "All systems should have data classification",
+            "control-description": "All systems and their sub-systems should have controls data classification",
+            "control-test-criteria": [
+                {
+                    "control-test-criteria-id" : "TRA-001-cr-001",
+                    "control-test-criteria-summary": "Tags",
+                    "control-test-criteria-description": "All systems have tags"
+                }
+            ],
+            "obligations": [
+                 {
+                    "obligation-id": "tra-obl-001",
+                    "obligation-relationship": "Direct",
+                    "obligation-justification": "In order to identify the impact all systems should have adequate data classification"
+                }
+            ]
+        }
+    ]
+}
